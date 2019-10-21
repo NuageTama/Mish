@@ -5,7 +5,7 @@ class Produit {
   public $prenom;
   public $email;
   public $adresse;
-  public $datecreation;
+  public $datecreation; // Format: YYYY-MM-DD
   /*
   ATTENTION: Le mot de passe est un champ critique de la sécurité, pour stocker cette information correctement,
   nous utiliserons une fonction encryptage nommée hash_pbkdf2() (voir documentation),
