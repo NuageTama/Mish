@@ -2,7 +2,7 @@ CREATE TABLE produit (
   id INTEGER NOT NULL AUTO_INCREMENT,
   nom STRING NOT NULL,
   info STRING,
-  prix INTEGER,
+  prix FLOAT,
   categorie STRING,
   image STRING,
   PRIMARY KEY(id)
@@ -16,5 +16,6 @@ CREATE TABLE client (
   adresse STRING,
   datecreation DATE,
   password STRING,
+  admin BOOLEAN,
   PRIMARY KEY(id)
 );

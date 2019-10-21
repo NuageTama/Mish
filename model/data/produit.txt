@@ -1,0 +1,1 @@
+id|nom|info|prix|categorie|image.png (à effacer)

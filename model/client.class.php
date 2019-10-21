@@ -12,8 +12,9 @@ class Produit {
   et le mot de passe ne devra pas apparaitre en clair dans la base de donnée.
   */
   public $password;
+  public $admin;
 
-  function __construct(int $id = 0, string $nom = '', string $prenom = '', string $email = '', string $adresse = '', string $datecreation = '', string $password = '') {
+  function __construct(int $id = 0, string $nom = '', string $prenom = '', string $email = '', string $adresse = '', string $datecreation = '', string $password = '', boolean $admin = FALSE) {
     $this->id = $id;
     $this->nom = $nom;
     $this->prenom = $prenom;
@@ -21,6 +22,7 @@ class Produit {
     $this->adresse = $adresse;
     $this->datecreation = $datecreation;
     $this->password = $password;
+    $this->admin = $admin;
   }
 }
 ?>
