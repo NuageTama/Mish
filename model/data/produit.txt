@@ -1,1 +1,6 @@
-id|nom|info|prix|categorie|image.png (à effacer)
+1|ASUS DUAL SERIES AMD Radeon RX 580 OC EDITION 4Go|4 Go DVI/Dual HDMI/Dual DisplayPort - PCI Express (AMD Radeon RX 580)|179,95|Carte Graphique|1.jpg
+2|ASUS RADEON VII|16 Go HBM2 - HDMI/Tri DisplayPort - PCI Express (AMD Radeon VII)|849,95|Carte Graphique|2.jpg
+3|INNO3D GeForce GTX 1660 COMPACT X1|6 Go GDDR5 - HDMI/Tri DisplayPort - PCI Express (NVIDIA GeForce GTX 1660)|234,95|Carte Graphique|3.jpg
+4|Sapphire NITRO+ Radeon RX 5700 XT 8G|8 Go GDDR6 - HDMI/Tri DisplayPort - PCI Express (AMD Radeon RX 5700 XT)|489,95|Carte Graphique|4.jpg
+5|Sapphire PULSE Radeon RX 5700 XT 8G|8 Go GDDR6 - HDMI/Tri DisplayPort - PCI Express (AMD Radeon RX 5700 XT)|469,95|Carte Graphique|5.jpg
+6|Sapphire NITRO+ Radeon RX 590 8GD5|8 Go GDDR5 - DVI/Dual HDMI/Dual DisplayPort - PCI Express (AMD Radeon RX 590)|214,95|Carte Graphique|6.jpg

@@ -1,5 +1,5 @@
 CREATE TABLE produit (
-  id INTEGER NOT NULL AUTO_INCREMENT,
+  id INTEGER NOT NULL,
   nom STRING NOT NULL,
   info STRING,
   prix FLOAT,
@@ -9,7 +9,7 @@ CREATE TABLE produit (
 );
 
 CREATE TABLE client (
-  id INTEGER NOT NULL AUTO_INCREMENT,
+  id INTEGER NOT NULL,
   nom STRING NOT NULL,
   prenom STRING,
   email STRING,
