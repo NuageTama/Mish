@@ -21,6 +21,15 @@
     </header>
     <main>
       <!--Partie principale de la page-->
+      <?php foreach ($produits as $produit): ?>
+        <div class="productCard">
+          <img src="<?= $produit->image ?>" alt="Image du produit">
+          <div class="productText">
+            <h5><?= $produit->nom ?></h5>
+            <h4><?= $produit->prix ?>€</h4>
+          </div>
+        </div>
+      <?php endforeach; ?>
     </main>
     <footer>
       <!--footer vide pour occuper l'espace-->
