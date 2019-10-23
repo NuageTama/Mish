@@ -29,27 +29,30 @@
     </header>
     <main>
       <!--Partie principale de la page-->
+      <div class="products">
       <?php foreach ($produits as $produit): ?>
         <div class="productCard">
-          <img src="<?= $produit->image ?>" alt="Image du produit">
+          <img src="<?= $produit->image ?>" alt="Image du produit" width="300px">
           <div class="productText">
-            <h5><?= $produit->nom ?></h5>
+            <h6><?= $produit->nom ?></h6>
             <h4><?= $produit->prix ?>€</h4>
           </div>
         </div>
       <?php endforeach; ?>
-      <!--Popup form-->
+      </div>
+      <!--Popup form
       <div class="form-popup" id="loginForm">
 
       </div>
       <div class="form-popup" id="inscriptionForm">
 
       </div>
+      -->
     </main>
     <footer>
       <!--footer vide pour occuper l'espace-->
     </footer>
-    <!--Javascript pour afficher les popups-->
+    <!--Javascript pour afficher les popups
     <script>
       function openLoginForm() {
         document.getElementById("loginForm").style.display = "block";
@@ -64,6 +67,6 @@
         document.getElementById("inscriptionForm").style.display = "none";
       }
     </script>
-
+-->
   </body>
 </html>

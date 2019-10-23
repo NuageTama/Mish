@@ -8,7 +8,7 @@ $DAO = new ProduitDAO($config['database_path']);
 $produits = $DAO->getAll();
 foreach ($produits as $produit) {
   $image = $produit->image;
-  $image = $config['image_path'].$image;
+  $image = $config['produit_image_path'].$image;
   $produit->image = $image;
 }
 

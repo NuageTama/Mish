@@ -10,6 +10,18 @@ header {
   background-color: #ffefdb;
 }
 
+header > .iconBar {
+  min-width: 100%;
+  text-align: right;
+  margin-top: 10px;
+}
+
+header > .iconBar > button {
+  background-color: #ffefdb;
+  border: none;
+  color: #636363;
+}
+
 header > a {
   padding-top: 30px;
 }
@@ -41,6 +53,19 @@ main {
   min-height: 700px;
   max-width: 70%;
   margin: auto;
+}
+
+.products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.products > .productCard {
+  display: inline-block;
+  width: 300px;
+  margin: 3em;
 }
 
 main > .popup-form {
