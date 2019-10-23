@@ -43,6 +43,13 @@ main {
   margin: auto;
 }
 
+main > .popup-form {
+  display: none;
+  position: fixed;
+  top: 20%;
+  z-index: 9;
+}
+
 footer {
   min-height: 200px;
   background-color: #636363;
