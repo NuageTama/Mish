@@ -68,11 +68,47 @@ main {
   margin: 3em;
 }
 
-main > .popup-form {
+.form-popup {
   display: none;
   position: fixed;
-  top: 20%;
+  top: 44px;
+  right: 1px;
   z-index: 9;
+}
+
+.form-popup > .form-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #636363;
+  padding: 50px;
+  align-items: center;
+}
+
+.form-container > .button-cancel {
+  text-align: right;
+  position: fixed;
+  top: 48px;
+  right: 2px;
+}
+
+.form-container > input {
+  min-width: 90%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.form-container > button {
+  background-color: transparent;
+  border: none;
+}
+
+.form-container > .button-confirm {
+  min-width: 90%;
+  margin-top: 30px;
+  padding: 20px 90px;
+  background-color: lightblue;
+  border-radius: 10px;
+  font-size: 20px;
 }
 
 footer {

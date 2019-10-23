@@ -27,6 +27,28 @@
       </ul>
       </nav>
     </header>
+    <!--Popup form-->
+    <!--Formulaire de login-->
+    <div class="form-popup" id="loginForm">
+      <div class="form-container">
+        <button type="submit" class="button-cancel" onclick="closeLoginForm()"><img src="../view/design/icon_cancel.png" alt="cancel" width="32px"></button>
+        <input type="text" placeholder="Email" name="email" required>
+        <input type="password" placeholder="Password" name="password" required>
+        <button type="submit" class="button-confirm">Login</button>
+      </div>
+    </div>
+    <!--Formulaire d'inscription-->
+    <div class="form-popup" id="inscriptionForm">
+      <div class="form-container">
+        <button type="submit" class="button-cancel" onclick="closeInscriptionForm()"><img src="../view/design/icon_cancel.png" alt="cancel" width="32px"></button>
+        <input type="text" placeholder="First Name" name="prenom">
+        <input type="text" placeholder="Last Name" name="nom">
+        <input type="text" placeholder="Email" name="email" required>
+        <input type="password" placeholder="Password" name="password" required>
+        <input type="text" placeholder="Adress" name="adresse">
+        <button type="submit" class="button-confirm">Create an account</button>
+      </div>
+    </div>
     <main>
       <!--Partie principale de la page-->
       <div class="products">
@@ -40,19 +62,11 @@
         </div>
       <?php endforeach; ?>
       </div>
-      <!--Popup form
-      <div class="form-popup" id="loginForm">
-
-      </div>
-      <div class="form-popup" id="inscriptionForm">
-
-      </div>
-      -->
     </main>
     <footer>
       <!--footer vide pour occuper l'espace-->
     </footer>
-    <!--Javascript pour afficher les popups
+    <!--Javascript pour afficher les popups-->
     <script>
       function openLoginForm() {
         document.getElementById("loginForm").style.display = "block";
@@ -67,6 +81,5 @@
         document.getElementById("inscriptionForm").style.display = "none";
       }
     </script>
--->
   </body>
 </html>
