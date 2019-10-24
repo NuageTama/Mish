@@ -51,17 +51,16 @@
     </div>
     <main>
       <!--Partie principale de la page-->
-      <div class="products">
-      <?php foreach ($produits as $produit): ?>
-        <div class="productCard">
-          <a href="../produit.ctrl.php?id=<?= $produit->id ?>"><img src="<?= $produit->image ?>" alt="Image du produit" width="300px"></a>
-          <div class="productText">
-            <h6><?= $produit->nom ?></h6>
-            <h4><?= $produit->prix ?>€</h4>
-          </div>
+      <article>
+        <img src="<?= $produit->image ?>" alt="Image du produit">
+        <div class="productInfo">
+          <h1><?= $produit->nom ?></h1>
+          <h3><?= $produit->info ?></h3>
+          <form method="post" action="achat.ctrl.php">
+            <button type="button" name="button">Buy for <?= $produit->prix ?></button>
+          </form>
         </div>
-      <?php endforeach; ?>
-      </div>
+      </article>
     </main>
     <footer>
       <!--footer vide pour occuper l'espace-->
