@@ -1,0 +1,31 @@
+/*produit.view.php*/
+
+article {
+  display: flex;
+  flex-direction: row;
+}
+
+article > img {
+  margin-top: 4em;
+  padding-right: 3em;
+  border-right: 1px solid #636363;
+}
+
+.productInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: 3em;
+}
+
+.productInfo > h4 {
+  color: #636363;
+}
+
+.productInfo > form > button {
+  margin-top: 450px;
+  background-color: lime;
+  padding: 20px;
+  border: none;
+  font-weight: bold;
+}

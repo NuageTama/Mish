@@ -4,6 +4,9 @@
   <head>
     <meta charset="utf-8">
     <title>Mish</title>
+    <!--general css for every page-->
+    <link rel="stylesheet" href="../view/design/headerfooter.css">
+    <!--specific css for this page-->
     <link rel="stylesheet" href="../view/design/main.css">
   </head>
   <body>
@@ -17,7 +20,7 @@
           <img src="../view/design/icon_create_account.png" alt="inscription button" width="30px">
         </button>
       </div>
-      <a href="main.view.php">
+      <a href="main.ctrl.php">
         <img src="../view/design/MishHD.png" alt="Logo de Mish" width="256">
       </a>
       <ul>
@@ -54,7 +57,7 @@
       <div class="products">
       <?php foreach ($produits as $produit): ?>
         <div class="productCard">
-          <a href="../produit.ctrl.php?id=<?= $produit->id ?>"><img src="<?= $produit->image ?>" alt="Image du produit" width="300px"></a>
+          <a href="../controler/produit.ctrl.php?id=<?= $produit->id ?>"><img src="<?= $produit->image ?>" alt="Image du produit" width="300px"></a>
           <div class="productText">
             <h6><?= $produit->nom ?></h6>
             <h4><?= $produit->prix ?>€</h4>

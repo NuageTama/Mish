@@ -13,7 +13,7 @@ $image = $produit->image;
 $image = $config['produit_image_path'].$image;
 $produit->image = $image;
 
-$view = new View('main.view.php');
+$view = new View('produit.view.php');
 $view->produit = $produit;
 $view->show();
 ?>

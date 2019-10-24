@@ -4,7 +4,10 @@
   <head>
     <meta charset="utf-8">
     <title>Mish</title>
-    <link rel="stylesheet" href="../view/design/main.css">
+    <!--general css for every page-->
+    <link rel="stylesheet" href="../view/design/headerfooter.css">
+    <!--specific css for this page-->
+    <link rel="stylesheet" href="../view/design/produit.css">
   </head>
   <body>
     <header>
@@ -17,7 +20,7 @@
           <img src="../view/design/icon_create_account.png" alt="inscription button" width="30px">
         </button>
       </div>
-      <a href="main.view.php">
+      <a href="main.ctrl.php">
         <img src="../view/design/MishHD.png" alt="Logo de Mish" width="256">
       </a>
       <ul>
@@ -52,12 +55,12 @@
     <main>
       <!--Partie principale de la page-->
       <article>
-        <img src="<?= $produit->image ?>" alt="Image du produit">
+        <img src="<?= $produit->image ?>" alt="Image du produit" width="600px">
         <div class="productInfo">
           <h1><?= $produit->nom ?></h1>
-          <h3><?= $produit->info ?></h3>
+          <h4><?= $produit->info ?></h4>
           <form method="post" action="achat.ctrl.php">
-            <button type="button" name="button">Buy for <?= $produit->prix ?></button>
+            <button type="button" name="button">Buy for <?= $produit->prix ?>€</button>
           </form>
         </div>
       </article>
