@@ -34,21 +34,24 @@ class ProduitDAO {
 
 
   public function putClient(Client $client) {
+    //On défini l'identifiant du client qu'on se prepare à insérer
     $sql = "SELECT MAX(id) FROM client";
     $id = $this->db->query($sql);
-    $sql = "INSERT INTO client(id, nom, prenom,  email, adresse, datecreation, password, admin)
+
+    $query = $this->dn->prepare(INSERT INTO client(id, nom, prenom,  email, adresse, datecreation, password, admin)
                                                           VALUES ($id[0], $client->nom, $client->$prenom,
                                                                           $client->email,$client->adresse, CURDATE(),
-                                                                          $client->password, 0)";
+                                                                          $client->password, 0))
     $this->db->query($sql);
   }
 
-  public function uniqueEmail(Client $client) : boolean { //on test si l'email est unique
-    $sql = "SELECT email FROM client WHERE email='$lient->email'";
+  public function uniqueEmail(String $email) : boolean { //on test si l'email est unique
+    $sql = "SELECT email FROM client WHERE email='$email'";
     $tab = $this->db->query($sql);
     return isset($tab);//a vérifier
   }
 
+//Obtenir un client grâce à son e-mail
   public function getClient(string $email) {
     $sql = "SELECT * FROM client WHERE email ='$email'";
     $tab = $this->db->query($sql)->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE, "Client");
