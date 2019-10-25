@@ -12,6 +12,8 @@ foreach ($produits as $produit) {
   $produit->image = $image;
 }
 
+
+
 $view = new View('main.view.php');
 $view->produits = $produits;
 $view->show();
