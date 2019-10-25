@@ -14,7 +14,8 @@ class Client {
   public $password;
   public $admin;
 
-  function __construct(int $id = 0, string $nom = '', string $prenom = '', string $email = '', string $adresse = '', string $datecreation = '', string $password = '', boolean $admin = FALSE) {
+  function __construct($id = 0, $nom = '', $prenom = '', $email = '',
+   $adresse = '', $datecreation = '', $password = '', $admin = FALSE) {
     $this->id = $id;
     $this->nom = $nom;
     $this->prenom = $prenom;
