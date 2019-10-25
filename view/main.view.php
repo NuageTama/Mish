@@ -37,16 +37,16 @@
     </header>
     <!--Popup form-->
     <!--Formulaire de login-->
-    <div class="form-popup" id="loginForm">
+    <form class="form-popup" id="loginForm" action="../controler/login.ctrl.php">
       <div class="form-container">
         <button type="submit" class="button-cancel" onclick="closeLoginForm()"><img src="../view/design/icon_cancel.png" alt="cancel" width="32px"></button>
         <input type="text" placeholder="Email" name="email" required>
         <input type="password" placeholder="Password" name="password" required>
         <button type="submit" class="button-confirm">Login</button>
       </div>
-    </div>
+    </form>
     <!--Formulaire d'inscription-->
-    <div class="form-popup" id="inscriptionForm">
+    <form class="form-popup" id="inscriptionForm" action="../controler/inscription.ctrl.php">
       <div class="form-container">
         <button type="submit" class="button-cancel" onclick="closeInscriptionForm()"><img src="../view/design/icon_cancel.png" alt="cancel" width="32px"></button>
         <input type="text" placeholder="First Name" name="prenom">
@@ -56,7 +56,7 @@
         <input type="text" placeholder="Adress" name="adresse">
         <button type="submit" class="button-confirm">Create an account</button>
       </div>
-    </div>
+    </form>
     <!--Message d'erreur-->
     <?if(isset($erreur)): ?>
     <div class="message-popup" id="errorPopup">

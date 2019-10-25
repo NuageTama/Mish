@@ -38,10 +38,12 @@ class ProduitDAO {
     $sql = "SELECT MAX(id) FROM client";
     $id = $this->db->query($sql);
 
-    $query = $this->dn->prepare(INSERT INTO client(id, nom, prenom,  email, adresse, datecreation, password, admin)
-                                                          VALUES ($id[0], $client->nom, $client->$prenom,
-                                                                          $client->email,$client->adresse, CURDATE(),
-                                                                          $client->password, 0))
+    $query = $this->dn->prepare("INSERT INTO client VALUES ($id[0], $client->nom,
+                                                                   $client->$prenom,
+                                                                   $client->email,
+                                                                   $client->adresse,
+                                                                   $client->datecreation,
+                                                                   $client->password, $client->admin)");
     $this->db->query($sql);
   }
 
