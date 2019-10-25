@@ -1,5 +1,4 @@
 /*css for standard  element in every page (header,footer)*/
-
 body {
   font-family: sans-serif;
   margin: 0px;
@@ -13,8 +12,9 @@ header {
 }
 
 header > .iconBar {
+  display: flex;
+  justify-content: flex-end;
   min-width: 100%;
-  text-align: right;
   margin-top: 10px;
 }
 
@@ -22,6 +22,11 @@ header > .iconBar > button {
   background-color: #ffefdb;
   border: none;
   color: #636363;
+}
+
+.iconBar > h5 {
+  margin: 0;
+  align-self: center;
 }
 
 header > a {
@@ -98,6 +103,26 @@ main {
   background-color: lightblue;
   border-radius: 10px;
   font-size: 20px;
+}
+
+.message-popup {
+  display: none;
+  position: fixed;
+  left: 45%;
+  top: 40%;
+  z-index: 9;
+}
+
+.message-popup > .button-cancel {
+  text-align: right;
+  position: absolute;
+  top: 2px;
+  right: 1px;
+}
+
+.message-popup > textarea {
+  align-self: center;
+  justify-content: center;
 }
 
 footer {

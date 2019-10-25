@@ -13,6 +13,11 @@
     <header>
       <!--En-tête avec le logo et la navigation-->
       <div class="iconBar">
+        <?php
+        if(isset($personne)) {
+          print("<h5>Bonjour $personne->prenom $personne->nom</h5>");
+        }
+        ?>
         <button id="login" onclick="openLoginForm()">
           <img src="../view/design/icon_login.png" alt="login button" width="30px">
         </button>
@@ -52,6 +57,15 @@
         <button type="submit" class="button-confirm">Create an account</button>
       </div>
     </div>
+    <!--Message d'erreur-->
+    <?if(isset($erreur)): ?>
+    <div class="message-popup" id="errorPopup">
+      <div class="form-container">
+        <button type="submit" class="button-cancel" onclick="closeErrorPopup()"><img src="../view/design/icon_cancel.png" alt="cancel" width="32px"></button>
+        <textarea name="errorMessage" rows="8" cols="80"><?= $erreur ?></textarea>
+      </div>
+    </div>
+    <?endif;  ?>
     <main>
       <!--Partie principale de la page-->
       <div class="products">
