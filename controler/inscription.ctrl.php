@@ -17,7 +17,7 @@ $view = new View('main.view.php');
   && isset($_GET['password'])){
 
     //L'email n'est pas déjà utilisé?
-    if($DAO->uniqueEmail($client->email)) {
+    if($DAO->uniqueEmail($_GET['email'])) {
 
       $client = new Client();
       $client->id = 0;
@@ -29,7 +29,7 @@ $view = new View('main.view.php');
       //Creation de la date
       date_default_timezone_get('UTC');
       $date = date('Y').'-'.date('m').'-'.date('d');
-      $client->date = $date
+      $client->date = $date;
 
       $client->password = $_GET['password'];
 
@@ -49,7 +49,7 @@ $view = new View('main.view.php');
       $view->show();
     }
   } else {
-    $erreur = "Tous les champs sont obligatoires"
+    $erreur = "Tous les champs sont obligatoires";
     $view->erreur = $erreur;
     $view->show();
   }

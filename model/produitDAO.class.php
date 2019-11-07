@@ -47,10 +47,15 @@ class ProduitDAO {
     $this->db->query($sql);
   }
 
-  public function uniqueEmail(String $email) : boolean { //on test si l'email est unique
+  //On vérifie si l'email est unique, faux si il ne l'est pas, vrai sinon
+  public function uniqueEmail(String $email) {
     $sql = "SELECT email FROM client WHERE email='$email'";
     $tab = $this->db->query($sql);
-    return isset($tab);//a vérifier
+    if(isset($tab)) {
+      return FALSE;
+    } else {
+      return TRUE;
+    }
   }
 
 //Obtenir un client grâce à son e-mail
